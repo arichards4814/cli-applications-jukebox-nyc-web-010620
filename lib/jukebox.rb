@@ -6,7 +6,7 @@ def run(songs)
 
     input = gets.strip
     if input == "exit"
-      puts "Goodbye!"
+      puts "Goodbye"
       return
     elsif input == "help"
     help
