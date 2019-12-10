@@ -72,5 +72,5 @@ end
 
 def exit_jukebox
   puts "Goodbye"
-  return
+  # return
 end
