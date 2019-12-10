@@ -1,9 +1,7 @@
-# Add your code here
+
 
 def run(songs)
   x = 1
-  numarr = [*1..9]
-  found = false
   while x > 0
 
     input = gets.strip
@@ -13,21 +11,7 @@ def run(songs)
     elsif input == "help"
     help
     elsif input == "play"
-      puts "Please enter song name or number:"
-      secondInput = gets.strip
-
-      numarr.each do |ele|
-        if ele.to_s == secondInput
-        puts "Playing " + songs[secondInput.to_i]
-        found = true
-        end
-      end
-
-      if found == false
-        puts "Invalid input, please try again"
-      else
-        found = false
-      end
+     play(songs)
     elsif input == "list"
     list(songs)
     end
@@ -53,5 +37,28 @@ indadjusted = ind + 1
 puts indadjusted.to_s + ". " + ele
 end
 
+
+end
+
+def play(songs)
+
+  numarr = [*1..9]
+  found = false
+
+ puts "Please enter song name or number:"
+      secondInput = gets.strip
+
+      numarr.each do |ele|
+        if ele.to_s == secondInput
+        puts "Playing " + songs[secondInput.to_i]
+        found = true
+        end
+      end
+
+      if found == false
+        puts "Invalid input, please try again"
+      else
+        found = false
+      end
 
 end
