@@ -51,14 +51,14 @@ def play(songs)
 
       numarr.each do |ele|
         if ele.to_s == secondInput
-        puts songs[secondInput.to_i]
+        puts songs[secondInput.to_i - 1]
         found = true
         end
       end
       
       songs.each do |ele|
          if ele.to_s == secondInput
-        puts songs[secondInput.to_i - 1]
+        puts songs[secondInput.to_i]
         found = true
         end
       end
