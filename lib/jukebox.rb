@@ -1,6 +1,7 @@
 
 
 def run(songs)
+  puts "Please enter a command:"
   x = 1
   while x > 0
 
