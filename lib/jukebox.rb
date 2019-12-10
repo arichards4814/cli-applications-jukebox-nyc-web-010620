@@ -8,7 +8,7 @@ def run(songs)
     input = gets.strip
     if input == "exit"
       puts "Goodbye"
-      return 
+      return "Goodbye"
     elsif input == "help"
     help
     elsif input == "play"
