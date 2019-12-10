@@ -7,8 +7,7 @@ def run(songs)
 
     input = gets.strip
     if input == "exit"
-      puts "Goodbye"
-      return "Goodbye"
+      exit_jukebox
     elsif input == "help"
     help
     elsif input == "play"
@@ -69,4 +68,9 @@ def play(songs)
         found = false
       end
 
+end
+
+def exit_jukebox
+  puts "Goodbye"
+  return
 end
