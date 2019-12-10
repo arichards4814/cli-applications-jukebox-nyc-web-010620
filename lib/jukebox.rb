@@ -45,7 +45,7 @@ def play(songs)
   numarr = [*1..9]
   found = false
 
- puts "Please enter song name or number:"
+ puts "Please enter a song name or number:"
       secondInput = gets.strip
 
       numarr.each do |ele|
